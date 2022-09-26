@@ -15,7 +15,18 @@ from sklearn.metrics import confusion_matrix, f1_score, accuracy_score, classifi
 
 
 
-st.set_page_config(page_icon="🚀", page_title="DDOS", initial_sidebar_state="auto")
+st.set_page_config(page_icon="🚀", page_title="DDOS", initial_sidebar_state="auto", layout="wide")
+
+
+hide_menu_style = """
+        <style>
+        footer {visibility: visible;}
+        footer:after{content:'Copyright @ 2022 syhrnfcrzy'; display:block; position:relative; color:tomato}
+        #MainMenu {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 #Menu Navigasi
 pilih = option_menu(
