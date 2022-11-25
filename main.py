@@ -36,7 +36,7 @@ pilih = option_menu(
   icons=["house", "graph-up", 'file-earmark-person'],
   default_index=0,
   orientation="horizontal"
-)
+)     
 
 if pilih == "Beranda":
   st.sidebar.header("Input Parameter")
@@ -80,7 +80,7 @@ if pilih == "Beranda":
   
   st.sidebar.subheader("Random Forest Classifier")
   maxdepth = st.sidebar.slider('max_depth (Kedalaman)', value=2, max_value=10, min_value=0)
-  maxfitur = st.sidebar.slider("max_features (Fitur)", value=16, max_value=22, min_value=0)
+  maxfitur = st.sidebar.slider("max_features (Fitur)", value=16, max_value=16, min_value=0)
   estimator = st.sidebar.slider("n_estimator (Jumlah Pohon)", value=200, min_value=0, max_value=300)
   random_state = st.sidebar.slider("random_state (Keadaan Acak)", max_value=18, min_value=None, value=5)
 
